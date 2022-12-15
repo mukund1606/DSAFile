@@ -40,7 +40,7 @@ void create_matrix(int **array, int rows, int columns){
   for(i = 0; i < rows; i++){
     for(j = 0; j < columns; j++){
       if(array[i][j] != 0){
-        insert_node(array[i][j], i, j);
+        insert_node(array[i][j], i+1, j+1);
       }
     }
   }
