@@ -20,6 +20,7 @@ node * create_node(int data, int row, int column){
   temp->row = row;
   temp->column = column;
   temp->next = NULL;
+  return temp;
 }
 
 void insert_node(int data, int row, int column){
@@ -48,7 +49,7 @@ void create_matrix(int **array, int rows, int columns){
 void printMatrix(){
   node * temp = head;
   while(temp!=NULL){
-    printf("\nRow: %d, Column: %d, Data: %d, ", temp->value, temp->row, temp->column);
+    printf("\nRow: %d, Column: %d, Data: %d", temp->value, temp->row, temp->column);
     temp = temp->next;
   }
 }
@@ -89,5 +90,7 @@ int main(){
   create_matrix(array, row, column);
   checkSparse(array, row, column);
   printMatrix();
+  getch();
+  clrscr();
   return 0;
 }
