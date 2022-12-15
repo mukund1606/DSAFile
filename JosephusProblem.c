@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <conio.h>
 
+int i;
 
 struct node{
   int data;
@@ -33,7 +34,7 @@ void create(struct node **head, int n){
 void traverse(struct node *head, int n){
   struct node *temp;
   temp = head;
-  for(int i = 0; i < n; i++){
+  for(i = 0; i < n; i++){
     printf("Data: %d \n", temp->data);
     temp = temp->next;
   }
@@ -53,7 +54,6 @@ void delete(struct node **data){
 void josephus(struct node *head, int k){
   struct node *temp;
   temp = head;
-  int i;
   printf("Death Order: ");
   while(temp->next != temp){
     for(i = 1; i < k; i++){
