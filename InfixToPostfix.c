@@ -54,7 +54,7 @@ int operator(char ch){
   if(ch == '(' || ch == ')' || ch == '[' || ch == ']' || ch == '{' || ch == '}'){
     return 2;
   }
-  else if(ch == '+' || ch == '-' || ch == '*' || ch == '/'){
+  else if(ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^'){
     return 1;
   }
   else{
