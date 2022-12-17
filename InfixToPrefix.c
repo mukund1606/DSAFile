@@ -104,11 +104,11 @@ void infixToPrefix(char infix[], char prefix[] ,unsigned int size){
       }
       else{
 	while(stack->top != -1 && (stack->arr[stack->top] != ')' || stack->arr[stack->top] != ']' || stack->arr[stack->top] != '}')){
-	  temp2 = pop(stack);
-	  if(operator(temp2) == 1){
-	    revExp[pos] = temp2;
-	    pos++;
-	  }
+    temp2 = pop(stack);
+    if(operator(temp2) == 1){
+      revExp[pos] = temp2;
+      pos++;
+    }
 	}
 	pop(stack);
       }
@@ -120,9 +120,9 @@ void infixToPrefix(char infix[], char prefix[] ,unsigned int size){
       }
       else{
 	while(stack->top != -1 && precedence(temp) <= precedence(stack->arr[stack->top])){
-	  temp2 = pop(stack);
-	  revExp[pos] = temp2;
-	  pos++;
+    temp2 = pop(stack);
+    revExp[pos] = temp2;
+    pos++;
 	}
 	push(stack, temp);
       }

@@ -72,7 +72,7 @@ void display(node *elem){
 }
 
 int operator(char ch){
-  if(ch == '+' || ch == '-' || ch == '*' || ch == '/'){
+  if(ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^'){
     return 1;
   }
   else{
