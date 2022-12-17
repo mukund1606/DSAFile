@@ -64,7 +64,7 @@ void checkSparse(int **array, int rows, int columns){
       }
     }
   }
-  if(count >= total/2){
+  if(count >= (total/2) + 1){
     printf("\nSparse Matrix");
   }
   else{

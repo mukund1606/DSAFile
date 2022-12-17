@@ -120,4 +120,5 @@ int main(){
   traverse(poly);
   getch();
   clrscr();
+  return 0;
 }

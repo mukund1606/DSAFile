@@ -28,8 +28,8 @@ int main()
     {
         printf(" %d", a[i]);
     }
-    // getch();
-    // clrscr();
+    getch();
+    clrscr();
     return 0;
 }
 
