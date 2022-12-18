@@ -83,9 +83,10 @@ void mergePart(int *a, int FI, int mid, int LI)
 
 void mergeSort(int *a, int FI, int LI)
 {
+    int mid;
     if (FI < LI)
     {
-        int mid = (LI + FI) / 2;
+        mid = (LI + FI) / 2;
         mergeSort(a, FI, mid);
         mergeSort(a, mid + 1, LI);
         mergePart(a, FI, mid, LI);

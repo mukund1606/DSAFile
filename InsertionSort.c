@@ -29,7 +29,6 @@ int *insertionSort(int n)
     for (i = 0; i < n; i++)
     {
         scanf("%d", &b);
-        // If Elem = 1;
         if (i == 0)
         {
             a[i] = b;
